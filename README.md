@@ -32,5 +32,5 @@ To create a `logstash-forwarder.crt` use the following command from the logstash
 
 ### To run:
 
-		docker run -d -v /var/lib/docker/aufs/mnt:/containers -v /opt/logstash-forwarder:/etc/logstash-forwarder logstash-forwarder
+		docker run -d -v /var/lib/docker/aufs/mnt:/containers -v /usr/local/etc/logstash-forwarder:/etc/logstash-forwarder logstash-forwarder
 
