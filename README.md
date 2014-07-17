@@ -12,10 +12,6 @@ To create a `logstash-forwarder.crt` use the following command from the logstash
 
 		$ openssl req -x509 -batch -nodes -newkey rsa:2048 -keyout logstash-forwarder.key -out logstash-forwarder.crt
 
-### To run:
-
-		docker run -d -v /var/lib/docker/aufs/mnt:/containers -v /opt/logstash-forwarder:/etc/logstash-forwarder logstash-forwarder
-
 #### Here is an example `logstash-forwarder.json`:
 
 		{
@@ -33,4 +29,8 @@ To create a `logstash-forwarder.crt` use the following command from the logstash
 			}
 		  ]
 		}
+
+### To run:
+
+		docker run -d -v /var/lib/docker/aufs/mnt:/containers -v /opt/logstash-forwarder:/etc/logstash-forwarder logstash-forwarder
 
