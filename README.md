@@ -16,7 +16,7 @@ To create a `logstash-forwarder.crt` use the following command from the logstash
 
 		docker run -d -v /var/lib/docker/aufs/mnt:/containers -v /opt/logstash-forwarder:/etc/logstash-forwarder logstash-forwarder
 
-#### Here is an example `logstash-forwarer.json`:
+#### Here is an example `logstash-forwarder.json`:
 
 		{
 		  "network": {
